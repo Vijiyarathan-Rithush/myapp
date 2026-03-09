@@ -23,15 +23,11 @@ jobs:
        cache: npm
 
    - run: npm install
-     working-directory: ./
-
    - run: npm run build
-     working-directory: ./
 
    - uses: aws-actions/configure-aws-credentials@v4
      with:
        role-to-assume: arn:aws:iam::841203434308:role/LabRole
        aws-region: us-east-1
 
-   - run: aws s3 sync dist/ s3://myapp-1773051759/ --delete
-     working-directory: ./
+   - run: aws s3 sync dist/ s3://myapp-1773052106/ --delete
