@@ -28,4 +28,4 @@ jobs:
        role-to-assume: arn:aws:iam::841203434308:role/LabRole
        aws-region: us-east-1
 
-   - run: aws s3 sync dist/ s3://myapp-1773050425/ --delete --acl public-read
+   - run: aws s3 sync dist/ s3://myapp-1773050628/ --delete --acl public-read
